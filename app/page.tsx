@@ -1,10 +1,8 @@
-import Image from 'next/image';
-import styles from './page.module.css';
 import css from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div className={css.page}>
       <main className={css.main}>
         <div className={css.container}>
           <h1 className={css.title}>Welcome to NoteHub</h1>
