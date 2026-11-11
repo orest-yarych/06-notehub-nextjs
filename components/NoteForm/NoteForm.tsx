@@ -3,6 +3,7 @@ import css from './NoteForm.module.css';
 import * as Yup from 'yup';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { createNote } from '@/lib/api';
+import { NoteTag } from '@/types/note';
 
 const formValidationSchema = Yup.object().shape({
   title: Yup.string().min(3).max(50).required(),
